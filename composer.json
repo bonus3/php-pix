@@ -1,0 +1,18 @@
+{
+    "name": "bonus3/php-pix",
+    "authors": [
+        {
+            "name": "Anderson Gonçalves",
+            "email": "anderson_rockandroll@hotmail.com"
+        }
+    ],
+    "require": {
+        "jbroadway/urlify": "^1.2",
+        "endroid/qr-code": "^3.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "PhpPix\\": "src"
+        }
+    }
+}
