@@ -83,7 +83,7 @@ class Pix {
 
     //Merchant Name
     public static function name($name) {
-        $name = \substr($name, 0, 26);
+        $name = \substr($name, 0, 25);
         $name = URLify::downcode($name);
         $name_len_pad = self::lpad(\strlen($name));
         return "59{$name_len_pad}$name";
