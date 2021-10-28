@@ -83,6 +83,7 @@ class Pix {
 
     //Merchant Name
     public static function name($name) {
+        $name = strtr(utf8_decode($name), utf8_decode("àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ"), "aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY");
         $name = \substr($name, 0, 25);
         $name = URLify::downcode($name);
         $name_len_pad = self::lpad(\strlen($name));
