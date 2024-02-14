@@ -85,6 +85,7 @@ class Pix {
     public static function name($name) {
         $name = \substr($name, 0, 25);
         $name = URLify::downcode($name);
+        $name = trim($name);
         $name_len_pad = self::lpad(\strlen($name));
         return "59{$name_len_pad}$name";
     }
